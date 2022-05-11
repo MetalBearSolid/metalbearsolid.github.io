@@ -321,6 +321,15 @@ footer p{
 }
 
 @media screen and (max-width: 500px) {
+  p {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  img {
+    width: 250px;
+  }
+  
   .bg-img img{
     width: 100px;
   }
