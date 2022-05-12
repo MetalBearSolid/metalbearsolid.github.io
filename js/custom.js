@@ -60,7 +60,7 @@ prev.addEventListener("click", function(){
 });
 
 //Typewriter
-const texts = ['code', 'fun stuff', 'bye...'];
+const texts = ['Positive', 'Keen', 'Creative'];
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -79,7 +79,7 @@ let letter = '';
 		count++
 		index = 0;
 	}
-	setTimeout(type, 320);
+	setTimeout(type, 277);
 
 }());
 

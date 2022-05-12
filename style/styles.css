@@ -24,17 +24,6 @@
   }
 }
 
-/* @-webkit-keyframes intro{
-    0%   {opacity: 1;}
-    70%  {opacity: 1;}
-    90% {opacity: 1;-webkit-transform: translateY(0px);}
-    100% {opacity: 0;-webkit-transform: translateY(-30px);}
-} */
-
-/* .bg-img span.logo {
-  background-image: url('../images/logo.png');
-} */
-
 img.mobile-img {
   display: none;
 }
@@ -42,13 +31,18 @@ img.mobile-img {
 .bg-img img {
   display: block;
   margin-left: auto;
-  margin-right: 45%;
+  margin-right: auto;
   width: 125px;
   animation: move-logo 3s ease forwards;
-  animation-delay: 4s;
+  animation-delay: 5s;
   position: absolute;
   top: 30%;
-  right: 0%;
+  left: 0;
+  right: 25px;
+  margin: auto;
+  text-align: center;
+  z-index: 1;
+  border-radius: initial;
 }
 
 @keyframes move-logo {
@@ -107,11 +101,12 @@ img {
   -webkit-animation: slideInLeft 2s forwards;
   -moz-animation: slideInLeft 2s forwards;
   animation: slideInLeft 2s forwards;
+  animation-delay: 5s;
 }
 
 @keyframes slideInLeft {
   0% {
-    transform: translateX(-900px);
+    transform: translate(-1900px);
   }
   100% {
     transform: translateX(0);
@@ -120,7 +115,7 @@ img {
 
 @-moz-keyframes slideInLeft {
   0% {
-    transform: translateX(-900px);
+    transform: translateX(-1900px);
   }
   100% {
     transform: translateX(0);
@@ -129,7 +124,7 @@ img {
 
 @-webkit-keyframes slideInLeft {
   0% {
-    transform: translateX(-900px);
+    transform: translateX(-1900px);
   }
   100% {
     transform: translateX(0);
@@ -173,6 +168,7 @@ ul.social-icons li a:hover{
   -webkit-animation: slideInRight 2s forwards;
   -moz-animation: slideInRight 2s forwards;
   animation: slideInRight 2s forwards;
+  animation-delay: 5.3s;
 }
 
 @keyframes slideInRight {
@@ -294,13 +290,10 @@ footer p{
 
   .right-box-img {
     width: 100%;
+    height: auto;
     right: 0%;
-    top: 15%;
+    top: 50%;
   }
-
-  ul.social-icons {
-    margin-top: 200px;
-}
 
   ul.social-icons li {
     display: inline;
@@ -321,6 +314,10 @@ footer p{
 }
 
 @media screen and (max-width: 500px) {
+  .right-box-img {
+    top: 50%;
+  }
+
   p {
     font-size: 15px;
     padding: 5px;
@@ -330,7 +327,7 @@ footer p{
     width: 250px;
   }
   
-  .bg-img img{
+  .bg-img img {
     width: 100px;
   }
 
